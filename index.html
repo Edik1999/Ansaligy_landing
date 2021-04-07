@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+    
+    <link rel="stylesheet" href="css/chiefslider.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/6e2b9d92b6.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.scrollme.js"></script>
+    <title>Ansaligy</title>
+
+</head>
+<body>
+    <header>
+        <div class="header__wrap">
+            <a href="#anchor1">
+                <svg id="logo-ansaligy" viewBox="0 0 261 37">
+                    <path fill="#ffffff" d="M15.4788 0.515567L4.83441 26.742C4.74769 27.03 2.27629 33.0107 2.27629 33.0107C1.56088 34.8049 1.32242 35.0485 0 36.1782H5.4631C4.18404 35.4029 3.98893 34.8713 4.55258 33.6087L7.8261 25.4573H20.7468C20.7468 25.4573 23.6951 32.9442 23.8469 33.3651C24.3238 34.9156 23.9986 35.27 22.6545 36.1782C22.6979 36.1782 31.1093 36.1782 31.1093 36.1782C29.7219 35.4029 28.9631 34.9599 28.3127 33.3208L15.4788 0.515567ZM8.91005 22.7992L14.4815 9.15435L19.7495 22.7992H8.91005ZM66.2075 3.86033V27.1186L45.244 0.515567H38.3501C41.2984 1.97751 41.2551 2.02182 41.2551 4.83496V32.767C41.2551 34.229 41.4935 35.2922 39.4991 36.1561H45.1573C43.2062 35.2922 43.3579 34.2068 43.3579 32.767V4.87926L68.3104 36.5548V3.86033C68.3104 2.44268 68.0719 1.33514 70.1097 0.515567H64.4515C66.4894 1.29084 66.2075 2.46483 66.2075 3.86033ZM97.9889 2.46483C96.8399 1.68956 96.2762 1.35729 95.2357 0.869979C92.2873 -0.591969 87.3445 -0.193256 84.3095 1.93321C81.4045 4.01538 80.4073 7.38229 80.559 9.90747C80.9926 16.3755 85.2633 18.3026 89.9243 20.7835C93.0678 22.4448 95.7126 24.2833 96.0595 27.3401C96.2546 29.1343 95.7343 31.4158 93.7398 33.0328C91.7887 34.6277 88.797 34.6941 86.6508 33.8967C83.0304 32.5898 80.9059 28.1154 80.2772 25.3908V32.8778C83.1822 35.7352 86.7375 36.6655 89.9243 36.6655C93.4363 36.6655 96.9049 35.0042 99.0945 31.0393C100.851 27.8274 100.417 24.1947 98.5742 21.0936C97.1 18.7678 95.6692 17.7931 93.5447 16.4862L91.1167 15.0686C88.0816 13.2744 84.8514 11.6131 84.4179 8.22402C84.2227 6.56271 84.8514 4.39194 86.369 3.21796C88.0816 1.80031 90.2278 1.6674 92.2656 2.39838C95.7776 3.57237 97.0567 5.94249 98.0106 9.28725V2.46483H97.9889ZM122.985 0.515567L112.34 26.742C112.254 27.03 109.782 33.0107 109.782 33.0107C109.067 34.8049 108.828 35.0485 107.506 36.1782H112.969C111.69 35.4029 111.495 34.8713 112.059 33.6087L115.332 25.4573H128.253C128.253 25.4573 131.201 32.9442 131.353 33.3651C131.83 34.9156 131.505 35.27 130.16 36.1782C130.204 36.1782 138.615 36.1782 138.615 36.1782C137.228 35.4029 136.469 34.9599 135.819 33.3208L122.985 0.515567ZM116.416 22.7992L121.987 9.15435L127.255 22.7992H116.416ZM147.048 36.1561C147.287 36.2004 167.86 36.1561 167.86 36.1561L168.576 30.5741C166.299 33.8746 164.066 33.5423 161.248 33.5423C161.248 33.5423 153.877 33.5866 153.118 33.498C153.118 33.4537 153.118 3.88248 153.118 3.88248C153.118 2.46483 152.923 1.4016 154.983 0.537718H147.048C149.086 1.4016 148.848 2.48698 148.848 3.88248V32.767C148.848 34.229 149.086 35.2479 147.048 36.1561ZM183.274 32.767V3.86033C183.274 2.44268 183.035 1.37945 185.073 0.515567H177.139C179.177 1.37945 178.938 2.46483 178.938 3.86033V32.767C178.938 34.229 179.177 35.2479 177.139 36.1561C177.377 36.2004 185.073 36.1561 185.073 36.1561C183.035 35.2479 183.274 34.229 183.274 32.767ZM225.309 2.88569L224.074 2.39838C216.421 -0.459065 208.617 -1.58875 201.961 3.74957C196.108 8.46768 194.916 14.6699 195.219 20.2519C195.544 26.4762 198.839 31.8145 205.495 34.9156C212.909 38.3047 222.838 36.0232 228.171 32.1911C227.564 31.0171 227.499 30.6848 227.456 29.7102V28.204C227.456 27.1407 227.369 23.3973 228.778 22.0461H221.971C223.532 23.2644 223.402 27.2515 223.402 28.204V31.4158C220.367 34.0961 215.315 34.7606 213.278 34.672C209.007 34.4283 205.018 32.3019 202.351 27.3844C199.837 22.777 199.251 13.2079 202.503 8.48983C205.993 3.32871 209.18 1.97751 213.711 1.97751C219.174 1.97751 222.6 4.17044 226.155 10.4391L225.309 2.88569ZM250.674 17.6602L257.85 3.04075C258.522 1.6231 259.237 0.958581 260.559 0.515567H255.14C256.375 0.91428 256.289 1.73386 255.66 2.95215C255.226 3.72742 249.568 15.2901 249.568 15.2901L242.154 3.88248C241.005 2.08827 241.915 1.20224 244.018 0.537718H234.653C236.409 1.75601 236.843 2.28762 237.883 3.92678L246.381 16.7963V32.767C246.381 34.229 246.62 35.2479 244.539 36.1561H252.473C250.435 35.2257 250.674 34.2068 250.674 32.767V17.6602Z"></path>
+                </svg>
+            </a>
+            <a href="javascript:" class="header__menu-button" onclick="toggleMenu();"> 
+                <i class="fas fa-bars burger_menu"></i>
+            </a>
+            <div class="header__menu d-none">
+                <div><a href="#anchor1" class="header__menu-link">Матирующий лосьон</a></div>
+                <div><a href="#anchor2" class="header__menu-link">О лосьоне</a></div>
+                <div><a href="#anchor3" class="header__menu-link">Комментарии</a></div>
+                <div><a href="#anchor4" class="header__menu-link">Как сделать заказ</a></div>
+                <div><a href="#anchor5" class="header__menu-link">Заказать</a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main__banner" id="anchor1">
+            <div class="main__description">
+                <h1 class="main__title">
+                    МАТИРУЮЩИЙ ЛОСЬОН ANSALIGY FOR YOU
+                </h1>
+                <p class="main__text-cost">
+                    Цена без скидки  <span>Цена со скидкой</span>
+                </p>
+                <p class="main__cost">
+                    <span class="main__cost-1">2000</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 50 23" style="enable-background:new 0 0 50 23;" xml:space="preserve">
+                    <g>
+                        <path d="M2.6,9.4h1.8V0.5c0.6-0.1,1.3-0.3,2-0.3c0.7-0.1,1.5-0.1,2.2-0.1c0.8,0,1.5,0.1,2.3,0.2c0.7,0.2,1.4,0.4,2,0.8
+                            s1,0.9,1.4,1.6c0.4,0.7,0.5,1.6,0.5,2.6c0,1.1-0.2,1.9-0.5,2.6c-0.4,0.7-0.8,1.3-1.4,1.7c-0.6,0.4-1.3,0.7-2,0.9
+                            C10,10.9,9.2,11,8.4,11l-2,0v1.8h4.2v1.6H6.4v3.5H4.3v-3.5H2.6v-1.6h1.8V11H2.6V9.4z M8.6,1.9c-0.4,0-0.8,0-1.2,0
+                            C7,1.9,6.6,2,6.4,2v7.2h1.9c0.5,0,1,0,1.5-0.1c0.5-0.1,1-0.3,1.4-0.6c0.4-0.3,0.7-0.7,1-1.2c0.3-0.5,0.4-1.1,0.4-1.9
+                            c0-0.7-0.1-1.3-0.3-1.7c-0.2-0.5-0.5-0.8-0.9-1.1C11,2.3,10.6,2.1,10.1,2C9.6,1.9,9.1,1.9,8.6,1.9z"/>
+                        <path d="M23.6,0l1.6,0.7L16,21.4l-1.6-0.7L23.6,0z"/>
+                        <path d="M29.9,13.4l0.7,2.4h0.1l0.6-2.4l2.4-8.1h2L32,16.6c-0.3,0.8-0.6,1.6-0.8,2.4c-0.3,0.8-0.6,1.5-0.9,2.1s-0.7,1.1-1.1,1.4
+                            c-0.4,0.4-0.9,0.5-1.5,0.5c-0.6,0-1.1-0.1-1.5-0.3l0.4-1.7c0.2,0.1,0.4,0.1,0.6,0.1c0.5,0,0.9-0.2,1.4-0.7c0.4-0.5,0.8-1.3,1.1-2.5
+                            l-5-12.5h2.3L29.9,13.4z"/>
+                        <path d="M45.4,7.1h-5.5v10.8h-2V5.3h9.6v12.5h-2V7.1z"/>
+                    </g>
+                    </svg> 
+                    <span class="main__cost-2">1600</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 50 23" style="enable-background:new 0 0 50 23;" xml:space="preserve">
+                    <g>
+                        <path d="M2.6,9.4h1.8V0.5c0.6-0.1,1.3-0.3,2-0.3c0.7-0.1,1.5-0.1,2.2-0.1c0.8,0,1.5,0.1,2.3,0.2c0.7,0.2,1.4,0.4,2,0.8
+                            s1,0.9,1.4,1.6c0.4,0.7,0.5,1.6,0.5,2.6c0,1.1-0.2,1.9-0.5,2.6c-0.4,0.7-0.8,1.3-1.4,1.7c-0.6,0.4-1.3,0.7-2,0.9
+                            C10,10.9,9.2,11,8.4,11l-2,0v1.8h4.2v1.6H6.4v3.5H4.3v-3.5H2.6v-1.6h1.8V11H2.6V9.4z M8.6,1.9c-0.4,0-0.8,0-1.2,0
+                            C7,1.9,6.6,2,6.4,2v7.2h1.9c0.5,0,1,0,1.5-0.1c0.5-0.1,1-0.3,1.4-0.6c0.4-0.3,0.7-0.7,1-1.2c0.3-0.5,0.4-1.1,0.4-1.9
+                            c0-0.7-0.1-1.3-0.3-1.7c-0.2-0.5-0.5-0.8-0.9-1.1C11,2.3,10.6,2.1,10.1,2C9.6,1.9,9.1,1.9,8.6,1.9z"/>
+                        <path d="M23.6,0l1.6,0.7L16,21.4l-1.6-0.7L23.6,0z"/>
+                        <path d="M29.9,13.4l0.7,2.4h0.1l0.6-2.4l2.4-8.1h2L32,16.6c-0.3,0.8-0.6,1.6-0.8,2.4c-0.3,0.8-0.6,1.5-0.9,2.1s-0.7,1.1-1.1,1.4
+                            c-0.4,0.4-0.9,0.5-1.5,0.5c-0.6,0-1.1-0.1-1.5-0.3l0.4-1.7c0.2,0.1,0.4,0.1,0.6,0.1c0.5,0,0.9-0.2,1.4-0.7c0.4-0.5,0.8-1.3,1.1-2.5
+                            l-5-12.5h2.3L29.9,13.4z"/>
+                        <path d="M45.4,7.1h-5.5v10.8h-2V5.3h9.6v12.5h-2V7.1z"/>
+                    </g>
+                    </svg>
+                </p>
+                <a href="#anchor5" class="main__button">ЗАКАЗАТЬ СО СКИДКОЙ</a>
+                <section class="timer timer2">
+                    <div class="container">
+                        <h2 class="timer__title">
+                            ДО ОКОНЧАНИЯ АКЦИИ
+                        </h2>
+                        <div id="countdown3" class="countdown">
+                            <div class="countdown-number countdown-first" id="anchor2">
+                              <span class="days3 countdown-time"></span>
+                              <hr>
+                              <span class="countdown-text">дней</span>
+                            </div>
+                            <div class="countdown-number">
+                              <span class="hours3 countdown-time"></span>
+                              <hr>
+                              <span class="countdown-text">часов</span>
+                            </div>
+                            <div class="countdown-number">
+                              <span class="minutes3 countdown-time"></span>
+                              <hr>
+                              <span class="countdown-text">минут</span>
+                            </div>
+                            <div class="countdown-number countdown-last">
+                              <span class="seconds3 countdown-time"></span>
+                              <hr>
+                              <span class="countdown-text">секунд</span>
+                            </div>
+                        </div>
+                        <div class="timer__description">
+                            КОЛИЧЕСТВО ТОВАРА ОГРАНИЧЕНО
+                        </div>
+                    </div>
+                </section>        
+            </div>
+        </section>
+        <section class="timer" id="timer">
+            <div class="container">
+                <h2 class="timer__title">
+                    ДО ОКОНЧАНИЯ АКЦИИ
+                </h2>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-number countdown-first" id="anchor2">
+                      <span class="days countdown-time"></span>
+                      <hr>
+                      <span class="countdown-text">дней</span>
+                    </div>
+                    <div class="countdown-number">
+                      <span class="hours countdown-time"></span>
+                      <hr>
+                      <span class="countdown-text">часов</span>
+                    </div>
+                    <div class="countdown-number">
+                      <span class="minutes countdown-time"></span>
+                      <hr>
+                      <span class="countdown-text">минут</span>
+                    </div>
+                    <div class="countdown-number countdown-last">
+                      <span class="seconds countdown-time"></span>
+                      <hr>
+                      <span class="countdown-text">секунд</span>
+                    </div>
+                </div>
+                <div class="timer__description">
+                    КОЛИЧЕСТВО ТОВАРА ОГРАНИЧЕНО
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product__image"></div>
+            <div class="product__description">
+                <div class="product__description-item scrollme animateme" data-when="span" data-from="0.4" data-to="0" data-translatey="200">
+                    <img src="img/96x96-icon-01.svg" alt=""><p>Матирует и увлажняет кожу</p>
+                </div>
+                <div class="product__description-item scrollme animateme" data-when="span" data-from="0.4" data-to="0" data-translatey="200">
+                    <img src="img/96x96-icon-02.svg" alt=""><p>Регулирует активность сальных желез</p>
+                </div>
+                <div class="product__description-item product__description-item3 scrollme animateme" data-when="span" data-from="0.4" data-to="0" data-translatey="200">
+                    <img src="img/96x96-icon-03.svg" alt=""><p>Восстанавливают естественный pH-баланс кожи</p>
+                </div>
+                <div class="product__description-item product__description-item4 scrollme animateme" data-when="span" data-from="0.4" data-to="0" data-translatey="200">
+                    <img src="img/96x96-icon-04.svg" alt=""><p>Усиливает защитные функции эпидермиса</p>
+                </div>
+            </div>
+        </section>
+        <section class="interview scrollme">
+            <div class="interview__text animateme" data-when="span" data-from="0.8" data-to="0" data-translatey="-250">
+                <p class="interview__text-paragraph">Мне 44 года. Я никогда не скрывала свой возраст, как и то что хотела хорошо выглядеть. А для этого, как Вы знаете, женщины на многое способны.</p>
+                <p  id="anchor3">Именно поэтому несколько лет назад я создала свой бренд косметики ANSALIGY</p>
+            </div>
+            <h2 class="interview__name animateme" data-when="span" data-from="0.9" data-to="0" data-translatey="-250">
+                Тина Канделаки
+            </h2>
+        </section>
+        <scetion class="comments">
+            <h2 class="comments__title" id="anchor4">
+                Комментарии
+            </h2>
+            <div class="slider" data-slider="chiefslider">
+                <div class="slider__container">
+                    <div class="slider__wrapper">
+                        <div class="slider__items">
+                            <div class="slider__item">
+                                <div class="slider__item-container">
+                                <div class="slider__item-content">
+                                    <div class="comments__block">
+                                        <h3 class="comments__author">
+                                            Татьяна
+                                        </h3>
+                                        <p class="comments__text">
+                                            Прекрасный лосьон. Результат уже с первого применения. Очень довольна покупкой. Спасибо!
+                                        </p>
+                                    </div> 
+                                </div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item-container">
+                                <div class="slider__item-content">
+                                    <div class="comments__block">
+                                        <h3 class="comments__author">
+                                            Елена
+                                        </h3>
+                                        <p class="comments__text">
+                                            Лучшее увлажнение! Нежнейший запах
+                                        </p>
+                                    </div> 
+                                </div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item-container">
+                                <div class="slider__item-content">
+                                    <div class="comments__block">
+                                        <h3 class="comments__author">
+                                            Юлия
+                                        </h3>
+                                        <p class="comments__text">
+                                            Это просто волшебный тоник!!! А запах!!! Просто чудо!!!
+                                        </p>
+                                    </div> 
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="slider__control" data-slide="prev"></a>
+                <a href="#" class="slider__control" data-slide="next"></a>
+            </div>
+            <h2 class="order">
+                КАК СДЕЛАТЬ ЗАКАЗ?
+            </h2>
+            <div class="order__wrap">
+                <div class="order__step">
+                    <p class="order__step-number order__step-number2">Шаг 1</p>
+                    <img src="img/128x128-icon-05.svg" alt="">
+                    <div class="order__step-wrap">
+                        <p class="order__step-number">Шаг 1</p>
+                        <p class="order__step-text">Вы заполняете заявку на сайте</p>
+                    </div>
+                </div>
+                <div class="order__step">
+                    <p class="order__step-number order__step-number2">Шаг 2</p>
+                    <img src="img/128x128-icon-06.svg" alt="">
+                    <div class="order__step-wrap">
+                        <p class="order__step-number">Шаг 2</p>
+                        <p class="order__step-text">Менеджер уточняет детали заказа</p>
+                    </div>
+                </div>
+                <div class="order__step">
+                    <p class="order__step-number order__step-number2">Шаг 3</p>
+                    <img src="img/128x128-icon-07.svg" alt="">
+                    <div class="order__step-wrap">
+                        <p class="order__step-number">Шаг 3</p>
+                        <p class="order__step-text">Отправляем Ваш заказ в любой регион России</p>
+                    </div>
+                </div>
+                <div class="order__step">
+                    <p class="order__step-number order__step-number2">Шаг 4</p>
+                    <img src="img/128x128-icon-08.svg" alt="">
+                    <div class="order__step-wrap">
+                        <p class="order__step-number">Шаг 4</p>
+                        <p class="order__step-text">Оплачиваете заказ при получении</p>
+                    </div>
+                </div>
+            </div>
+        </scetion>
+        <section class="submitOrder" id="anchor5">
+            <div class="submitOrder__wrapper">
+                <span class="submitOrder__timer-title">
+                    ДО КОНЦА АКЦИИ
+                </span>
+                <span class="submitOrder__timer">
+                    <div id="countdown2" class="countdown">
+                        <div class="countdown-number">
+                          <span class="days2 countdown-time"></span>
+                        </div>
+                        <div class="countdown-number">
+                          <span class="hours2 countdown-time"></span>
+                        </div>
+                        <div class="countdown-number">
+                          <span class="minutes2 countdown-time"></span>
+                        </div>
+                        <div class="countdown-number countdown-last">
+                          <span class="seconds2 countdown-time"></span>
+                        </div>
+                    </div>
+                </span>
+                <h3 class="submitOrder__title">
+                    МАТИРУЮЩИЙ ЛОСЬОН ANSALIGY FOR YOU
+                </h3>
+                <p class="submitOrder__text-cost">
+                    Цена без скидки  <span>Цена со скидкой</span>
+                </p>
+                <p class="submitOrder__cost">
+                    <span class="submitOrder__cost-1">2000</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 50 23" style="enable-background:new 0 0 50 23;" xml:space="preserve">
+                    <g>
+                        <path d="M2.6,9.4h1.8V0.5c0.6-0.1,1.3-0.3,2-0.3c0.7-0.1,1.5-0.1,2.2-0.1c0.8,0,1.5,0.1,2.3,0.2c0.7,0.2,1.4,0.4,2,0.8
+                            s1,0.9,1.4,1.6c0.4,0.7,0.5,1.6,0.5,2.6c0,1.1-0.2,1.9-0.5,2.6c-0.4,0.7-0.8,1.3-1.4,1.7c-0.6,0.4-1.3,0.7-2,0.9
+                            C10,10.9,9.2,11,8.4,11l-2,0v1.8h4.2v1.6H6.4v3.5H4.3v-3.5H2.6v-1.6h1.8V11H2.6V9.4z M8.6,1.9c-0.4,0-0.8,0-1.2,0
+                            C7,1.9,6.6,2,6.4,2v7.2h1.9c0.5,0,1,0,1.5-0.1c0.5-0.1,1-0.3,1.4-0.6c0.4-0.3,0.7-0.7,1-1.2c0.3-0.5,0.4-1.1,0.4-1.9
+                            c0-0.7-0.1-1.3-0.3-1.7c-0.2-0.5-0.5-0.8-0.9-1.1C11,2.3,10.6,2.1,10.1,2C9.6,1.9,9.1,1.9,8.6,1.9z"/>
+                        <path d="M23.6,0l1.6,0.7L16,21.4l-1.6-0.7L23.6,0z"/>
+                        <path d="M29.9,13.4l0.7,2.4h0.1l0.6-2.4l2.4-8.1h2L32,16.6c-0.3,0.8-0.6,1.6-0.8,2.4c-0.3,0.8-0.6,1.5-0.9,2.1s-0.7,1.1-1.1,1.4
+                            c-0.4,0.4-0.9,0.5-1.5,0.5c-0.6,0-1.1-0.1-1.5-0.3l0.4-1.7c0.2,0.1,0.4,0.1,0.6,0.1c0.5,0,0.9-0.2,1.4-0.7c0.4-0.5,0.8-1.3,1.1-2.5
+                            l-5-12.5h2.3L29.9,13.4z"/>
+                        <path d="M45.4,7.1h-5.5v10.8h-2V5.3h9.6v12.5h-2V7.1z"/>
+                    </g>
+                    </svg> 
+                    <span class="submitOrder__cost-2">1600</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 50 23" style="enable-background:new 0 0 50 23;" xml:space="preserve">
+                    <g>
+                        <path d="M2.6,9.4h1.8V0.5c0.6-0.1,1.3-0.3,2-0.3c0.7-0.1,1.5-0.1,2.2-0.1c0.8,0,1.5,0.1,2.3,0.2c0.7,0.2,1.4,0.4,2,0.8
+                            s1,0.9,1.4,1.6c0.4,0.7,0.5,1.6,0.5,2.6c0,1.1-0.2,1.9-0.5,2.6c-0.4,0.7-0.8,1.3-1.4,1.7c-0.6,0.4-1.3,0.7-2,0.9
+                            C10,10.9,9.2,11,8.4,11l-2,0v1.8h4.2v1.6H6.4v3.5H4.3v-3.5H2.6v-1.6h1.8V11H2.6V9.4z M8.6,1.9c-0.4,0-0.8,0-1.2,0
+                            C7,1.9,6.6,2,6.4,2v7.2h1.9c0.5,0,1,0,1.5-0.1c0.5-0.1,1-0.3,1.4-0.6c0.4-0.3,0.7-0.7,1-1.2c0.3-0.5,0.4-1.1,0.4-1.9
+                            c0-0.7-0.1-1.3-0.3-1.7c-0.2-0.5-0.5-0.8-0.9-1.1C11,2.3,10.6,2.1,10.1,2C9.6,1.9,9.1,1.9,8.6,1.9z"/>
+                        <path d="M23.6,0l1.6,0.7L16,21.4l-1.6-0.7L23.6,0z"/>
+                        <path d="M29.9,13.4l0.7,2.4h0.1l0.6-2.4l2.4-8.1h2L32,16.6c-0.3,0.8-0.6,1.6-0.8,2.4c-0.3,0.8-0.6,1.5-0.9,2.1s-0.7,1.1-1.1,1.4
+                            c-0.4,0.4-0.9,0.5-1.5,0.5c-0.6,0-1.1-0.1-1.5-0.3l0.4-1.7c0.2,0.1,0.4,0.1,0.6,0.1c0.5,0,0.9-0.2,1.4-0.7c0.4-0.5,0.8-1.3,1.1-2.5
+                            l-5-12.5h2.3L29.9,13.4z"/>
+                        <path d="M45.4,7.1h-5.5v10.8h-2V5.3h9.6v12.5h-2V7.1z"/>
+                    </g>
+                    </svg>
+                </p>
+                <form action="#" method="post" class="submitOrder__form">
+                    <input type="text" placeholder="Имя" name="name" id="">
+                    <input type="tel" placeholder="Номер телефона" name="tel" id="">
+                    <div class="submitOrder__form-counter">
+                        <span class="submitOrder__form-counterMinus submitOrder__form-counterItem" onclick="countMinus();">
+                            -
+                        </span>
+                        <span class="submitOrder__form-counterSum submitOrder__form-counterItem">
+                            0
+                        </span>
+                        <span class="submitOrder__form-counterPlus submitOrder__form-counterItem" onclick="countPlus();">
+                            +
+                        </span>
+                    </div>
+                    <span class="submitOrder__form-sum">0 </span>
+                    <img src="img/sign-rouble.svg" alt="рубль">
+                    <button class="submitOrder__form-button" type="submit">Заказать</button>
+                    <div class="submitOrder__form-terms">
+                        <input type="checkbox" name="" id="">
+                        <p class="submitOrder__form-text">Даю согласие на обработку персональных данных в соответствии с <a href="http://ansaligysale.ru/privacy.html">политикой конфиденциальности</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="footer">
+                <div class="footer__wrapper">
+                    <p class="footer__company">Ansaligy © 2020—2021</p>
+                    <p class="footer__text">ООО «CЭЙГЛ» 119180, Москва, ул, Большая Якиманка, 22к3, офис 90А<br>ОГРН: 1157746947016</p>
+                    <a href="http://ansaligysale.ru/privacy.html" class="footer__terms">Политика конфиденциальности</a>
+                </div>     
+            </div>
+        </section>
+    </main>
+     
+<script src="js/scripts.js"></script>
+<script src="js/chiefslider.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const $slider = document.querySelector('[data-slider="chiefslider"]');
+      const slider = new ChiefSlider($slider, {
+        loop: true,
+        autoplay: true,
+        interval: 5000,
+        refresh: true,
+      });
+    });
+    </script>
+
+</body>
+</html>
